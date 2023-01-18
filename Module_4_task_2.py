@@ -20,7 +20,7 @@ def calculator(num_1, num_2, action):
       if num_2 != 0:
        result = num_1/num_2
       else:
-       logger.info("Ділення на 0 є неможливим")
+       logger.info("raise ValueError")
 
   else :
     print("Невідома операція")
@@ -35,3 +35,4 @@ if __name__ == "__main__":
    result_2 = calculator(num_1, num_2, action)
    logger.info(f"Результат обчислення: {num_1} і {num_2}: ")
    logger.info(result_2)
+
