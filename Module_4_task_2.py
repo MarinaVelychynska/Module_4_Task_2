@@ -17,8 +17,10 @@ def calculator(num_1, num_2, action):
      result = num_1*num_2
     
   elif action == '4':
-     result = num_1/num_2
-     logger.info("Ділення на 0 є неможливим")
+      if num_2 != 0:
+       result = num_1/num_2
+      else:
+       logger.info("Ділення на 0 є неможливим")
 
   else :
     print("Невідома операція")
