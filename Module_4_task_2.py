@@ -20,8 +20,9 @@ def calculator(num_1, num_2, action):
       if num_2 != 0:
        result = num_1/num_2
       else:
-       logger.info("raise ValueError")
-
+       logger.info("Ділення на 0 є неможливим")
+       raise ValueError
+      
   else :
     print("Невідома операція")
   
